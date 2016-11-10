@@ -7,10 +7,10 @@
 			"email":"123@qq.com",
 			"password":"321"
 			},
-			  success: function(msg){
-				  alert("数据：" + data.msg + "\n状态：" + status)
+			  success: function(msg,jqXHR){
+				  alert("数据：" + msg + "\n状态：" + jqXHR.status)
 				  },
-				  error: function(){
+				  error: function(jqXHR){
 					  alert("发生错误:" + jqXHR.status)
 			      },
 			  		  
